@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../../images/background-image.png');
+}
+
+.container {
+  display: flex;
+  border-radius: 20px;
+}
+
+.sidebar {
+  width: 70px;
+  background-color: #ffffff;
+  color: #6b6b6b;
+  height: 95vh;
+  margin: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: width 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;  
+  color: inherit;  
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  
+}
+
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  color: #288bef;
+  margin-left: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sidebar:hover .brand-name {
+    text-decoration: none;  
+  color: inherit;  
+  opacity: 1;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  margin: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: #e7f0ff;
+  color: #288bef;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  margin: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;  
+  color: inherit;         
+}
+
+
+.sidebar-item span {
+  margin-left: 18px;
+  font-size: 16px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sidebar:hover .sidebar-item span {
+  opacity: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  color: white;
+}
+
+
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}

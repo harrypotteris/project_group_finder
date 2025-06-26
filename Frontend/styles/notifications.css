@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.main-content {
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9fc;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #222;
+  text-align: center;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.notification {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  font-size: 15px;
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
+
+.notification:hover {
+  background: #eef2ff; /* very light indigo background */
+}
+
+.notification i {
+  color: #5c6bc0;
+  font-size: 20px;
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+.notification-content {
+  flex: 1;
+  color: #2d2d2d;
+}
+
+.notification strong {
+  color: #1a1a1a;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}

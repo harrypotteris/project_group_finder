@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Joinado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/pages.css">
+ <link rel="stylesheet" href="../styles/dashboard.css">
+
+  <!-- JavaScript -->
+  <script src="../script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="./home.html" class="logo-section">
+        <img src="../images/logo.png" alt="Logo" class="logo">
+        <span class="brand-name">Joinado</span>
+      </a>
+      <div class="nav-sections">
+        <div class="nav-items">
+          <a href="dashboard.html" class="sidebar-item"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+          <a href="messages.html" class="sidebar-item"><i class="fas fa-envelope"></i><span>Messages</span></a>
+          <a href="notifications.html" class="sidebar-item"><i class="fas fa-bell"></i><span>Notifications</span></a>
+          <a href="tasks.html" class="sidebar-item"><i class="fas fa-tasks"></i><span>Tasks</span></a>
+        </div>
+        <div class="bottom-nav">
+          <a href="profile.html" class="sidebar-item"><i class="fas fa-user"></i><span>Profile</span></a>
+          <a href="settings.html" class="sidebar-item"><i class="fas fa-cog"></i><span>Settings</span></a>
+          <a href="../index.html" class="sidebar-item"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="hero-text">
+        <h1>Dashboard Overview</h1>
+        <p class="tagline">Explore and join college-wide project groups</p>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search projects..." id="searchInput">
+        <button><i class="fas fa-search"></i></button>
+
+        <!-- Filter Dropdown -->
+        <select id="filterSelect">
+          <option value="all">All</option>
+          <option value="requested">Requested</option>
+          <option value="joined">Joined</option>
+          <option value="open">Open</option>
+        </select>
+      </div>
+
+      <h2>Available Projects</h2>
+      <div class="project-cards">
+
+        <div class="project-card open">
+          <h3>Smart Attendance System</h3>
+          <p><strong>Course:</strong> Computer Vision</p>
+          <p><strong>Professor:</strong> Dr. Ramesh K</p>
+          <p><strong>Teammates Needed:</strong> 2</p>
+          <p><strong>Requirements:</strong> Python, OpenCV, Flask</p>
+          <p><strong>Current Members:</strong> Ankit, Charitha</p>
+          <button class="join-btn" onclick="sendJoinRequest(this, 'Smart Attendance System')">Join</button>
+        </div>
+
+        <div class="project-card requested">
+          <h3>AI Career Helper</h3>
+          <p><strong>Course:</strong> Machine Learning</p>
+          <p><strong>Professor:</strong> Prof. Meenakshi</p>
+          <p><strong>Teammates Needed:</strong> 3</p>
+          <p><strong>Requirements:</strong> Python, scikit-learn, UI/UX</p>
+          <p><strong>Current Members:</strong> Raj, Sneha</p>
+          <button class="join-btn" disabled>Requested ✓</button>
+        </div>
+
+        <div class="project-card joined">
+          <h3>Health Chatbot</h3>
+          <p><strong>Course:</strong> NLP Applications</p>
+          <p><strong>Professor:</strong> Dr. Ashok Rao</p>
+          <p><strong>Teammates Needed:</strong> 1</p>
+          <p><strong>Requirements:</strong> Python, Dialogflow</p>
+          <p><strong>Current Members:</strong> You, Meera</p>
+          <button class="join-btn" disabled>Joined ✔</button>
+        </div>
+
+      </div>
+
+      <div class="project-links">
+        <a href="#">&lt; View Previous Projects/Hackathons</a>
+        <a href="#">View Upcoming Projects/Hackathons &gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/join.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* settings.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f5f8ff, #eaf0ff);
+  color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+}
+
+.settings-content {
+  flex: 1;
+  margin-left: 150px;
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.coming-soon-box {
+  text-align: center;
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.coming-soon-box h2 {
+  font-size: 28px;
+  color: #1565c0;
+  margin-top: 10px;
+}
+
+.coming-soon-box p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.coming-soon-box .icon {
+  font-size: 48px;
+  color: #288bef;
+}

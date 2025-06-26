@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - Joinado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+  <a href="home.html" class="logo-section">
+    <img src="../images/logo.png" alt="Logo" class="logo">
+    <span class="brand-name">Joinado</span>
+  </a>
+  <div class="nav-sections">
+    <div class="nav-items">
+      <a href="dashboard.html" class="sidebar-item"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+      <a href="messages.html" class="sidebar-item"><i class="fas fa-envelope"></i><span>Messages</span></a>
+      <a href="notifications.html" class="sidebar-item"><i class="fas fa-bell"></i><span>Notifications</span></a>
+      <a href="tasks.html" class="sidebar-item"><i class="fas fa-tasks"></i><span>Tasks</span></a>
+    </div>
+    <div class="bottom-nav">
+      <a href="profile.html" class="sidebar-item"><i class="fas fa-user"></i><span>Profile</span></a>
+      <a href="settings.html" class="sidebar-item"><i class="fas fa-cog"></i><span>Settings</span></a>
+      <a href="../index.html" class="sidebar-item"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+    </div>
+  </div>
+</div>
+
+    <!-- Profile section -->
+    <div class="profile-content">
+      <div class="profile-header">
+        <img src="../images/profile-pic.png" alt="User Profile" class="profile-pic">
+        <h2 class="username">HAHa</h2>
+        <p class="tagline">Aspiring ML Developer | Collaborator @ Joinado</p>
+      </div>
+
+      <div class="profile-details">
+        <div class="detail-box">
+          <h4>Email</h4>
+          <p>hola@example.com</p>
+        </div>
+        <div class="detail-box">
+          <h4>College</h4>
+          <p>NIT Trichy</p>
+        </div>
+        <div class="detail-box">
+          <h4>Branch</h4>
+          <p>ECE</p>
+        </div>
+        <div class="detail-box">
+          <h4>Skills</h4>
+          <p>Python, OpenCV, ML, UI/UX</p>
+        </div>
+        <div class="detail-box">
+          <h4>Projects Joined</h4>
+          <ul>
+            <li>Smart Attendance System</li>
+            <li>AI Career Helper</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <button class="edit-btn"><i class="fas fa-edit"></i> Edit Profile</button>
+        <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/profile.js"></script>
+</body>
+</html>

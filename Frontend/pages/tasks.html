@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tasks & Reminders - Joinado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+  <link rel="stylesheet" href="../styles/tasks.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="./home.html" class="logo-section">
+        <img src="../images/logo.png" alt="Logo" class="logo" />
+        <span class="brand-name">Joinado</span>
+      </a>
+      <div class="nav-sections">
+        <div class="nav-items">
+          <a href="dashboard.html" class="sidebar-item"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+          <a href="messages.html" class="sidebar-item"><i class="fas fa-envelope"></i><span>Messages</span></a>
+          <a href="notifications.html" class="sidebar-item"><i class="fas fa-bell"></i><span>Notifications</span></a>
+          <a href="tasks.html" class="sidebar-item active"><i class="fas fa-tasks"></i><span>Tasks</span></a>
+        </div>
+        <div class="bottom-nav">
+          <a href="profile.html" class="sidebar-item"><i class="fas fa-user"></i><span>Profile</span></a>
+          <a href="settings.html" class="sidebar-item"><i class="fas fa-cog"></i><span>Settings</span></a>
+          <a href="../index.html" class="sidebar-item"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Today's Tasks & Reminders</h2>
+
+     <!-- Add Task -->
+<div class="add-task-box">
+  <input type="text" id="newTask" placeholder="Enter new task..." />
+  <input type="datetime-local" id="taskDateTime" />
+  <button onclick="addTask()"><i class="fas fa-plus"></i> Add</button>
+</div>
+
+
+      <!-- Task List -->
+      <div class="task-list" id="taskList">
+        <!-- Sample Reminders -->
+        <div class="task">
+          <i class="far fa-circle complete-btn" onclick="markComplete(this)" title="Toggle Complete"></i>
+          <div class="task-content">
+            <strong>Team Sync Meeting</strong>
+            Reminder: <b>10:00 AM</b> on Google Meet<br />
+            <span class="badge reminder">Reminder</span>
+          </div>
+          <i class="fas fa-trash-alt delete-btn" onclick="removeTask(this)"></i>
+        </div>
+
+        <div class="task">
+          <i class="far fa-circle complete-btn" onclick="markComplete(this)" title="Toggle Complete"></i>
+          <div class="task-content">
+            <strong>Submit AI Project Report</strong>
+            Deadline: <b>6:00 PM</b> today<br />
+            <span class="badge urgent">Urgent</span>
+          </div>
+          <i class="fas fa-trash-alt delete-btn" onclick="removeTask(this)"></i>
+        </div>
+
+        <div class="task">
+          <i class="far fa-circle complete-btn" onclick="markComplete(this)" title="Toggle Complete"></i>
+          <div class="task-content">
+            <strong>Join Hackathon Planning Call</strong>
+            Scheduled: <b>3:00 PM</b> Zoom link shared in messages<br />
+            <span class="badge in-progress">In Progress</span>
+          </div>
+          <i class="fas fa-trash-alt delete-btn" onclick="removeTask(this)"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/tasks.js"></script>
+</body>
+</html>
